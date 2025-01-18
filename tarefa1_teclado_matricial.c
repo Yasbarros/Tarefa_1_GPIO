@@ -2,6 +2,9 @@
 #include "pico/stdlib.h"
 #include "hardware/gpio.h"
 
+void init_gpio() {
+    
+}
 
 int main()
 {
