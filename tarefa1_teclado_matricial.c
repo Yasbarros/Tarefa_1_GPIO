@@ -96,6 +96,14 @@ int main()
                 break;
         }
         last_key = key;
-    }
+        if (!key && last_key) { // Detecta liberação de tecla
+            // Desliga LEDs e buzzer quando a tecla é liberada
+            gpio_put(LED1, 0);
+            gpio_put(LED2, 0);
+            gpio_put(LED3, 0);
+            gpio_put(BUZZER_PIN, 0);
 
+            last_key = 0; // Reseta a última tecla
+        }
+    }
 }
