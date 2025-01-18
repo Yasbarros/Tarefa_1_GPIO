@@ -26,7 +26,6 @@ const char keys[ROWS][COLS] = {
 };
 
 void init_gpio() {
-<<<<<<< HEAD
     //Configuração das linhas do teclado como saídass
     for (int i = 0; i < ROWS; i++) {
         gpio_init(row_pins[i]);
@@ -40,27 +39,17 @@ void init_gpio() {
         gpio_pull_up(col_pins[i]);
     }
 
-    gpio_init(BUZZER_PIN);
-    gpio_set_dir(BUZZER_PIN, GPIO_OUT);
-    gpio_put(BUZZER_PIN, 0); 
-=======
-    
-
     uint8_t led_pins[] = {LED1, LED2, LED3};
     for (int i = 0; i < 3; i++) {
         gpio_init(led_pins[i]);
         gpio_set_dir(led_pins[i], GPIO_OUT);
         gpio_put(led_pins[i], 0); // LEDs desligados
     }
->>>>>>> origin/init_gpio-B
+    
+    gpio_init(BUZZER_PIN);
+    gpio_set_dir(BUZZER_PIN, GPIO_OUT);
+    gpio_put(BUZZER_PIN, 0);
 }
-
-
-
-
-
-            // Controla LEDs e buzzer com base na tecla pressionada
-            
 
 int main()
 {
