@@ -2,10 +2,6 @@
 #include "pico/stdlib.h"
 #include "hardware/gpio.h"
 
-void init_gpio() {
-    
-}
-
 
 void init_gpio() {
     // Configuração do buzzer como saída
@@ -15,7 +11,6 @@ void init_gpio() {
     // Seta o buzzer como desligado por default
     gpio_put(BUZZER_PIN, 0); 
 }
-
 
 
 int main()
