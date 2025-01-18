@@ -2,6 +2,19 @@
 #include "pico/stdlib.h"
 #include "hardware/gpio.h"
 
+// Definição dos Pinos
+#define ROWS 4
+#define COLS 4
+uint8_t row_pins[ROWS] = {2, 3, 4, 5};  // Pinos das linhas do teclado
+uint8_t col_pins[COLS] = {6, 7, 8, 9};  // Pinos das colunas do teclado
+
+// LEDs GPIO
+#define LED1 11
+#define LED2 12
+#define LED3 13
+
+// Buzzer
+#define BUZZER_PIN 21
 
 int main()
 {
