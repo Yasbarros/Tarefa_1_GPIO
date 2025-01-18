@@ -6,12 +6,12 @@
 int main()
 {
     stdio_init_all();
-    init_gpio();
+    //init_gpio();
 
     char last_key = 0; // Variável para armazenar a última tecla pressionada
 
 
     while (1) {
-        
+        printf("a");
     }
 }
