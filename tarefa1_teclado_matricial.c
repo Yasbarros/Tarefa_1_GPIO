@@ -2,6 +2,7 @@
 #include <pico/stdlib.h>
 #include <hardware/gpio.h>
 
+
 // Definição dos Pinos
 #define ROWS 4
 #define COLS 4
@@ -23,6 +24,16 @@ const char keys[ROWS][COLS] = {
     {'7', '8', '9', 'C'},
     {'*', '0', '#', 'D'}
 };
+
+void init_gpio() {
+    //Configuração das linhas do teclado como saídass
+    for (int i = 0; i < ROWS; i++) {
+        gpio_init(row_pins[i]);
+        gpio_set_dir(row_pins[i], GPIO_OUT);
+        gpio_put(row_pins[i], 1); // Inicializa em estado alto
+    }
+}
+
 
 int main()
 {
