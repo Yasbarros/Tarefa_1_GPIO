@@ -54,35 +54,33 @@ void init_gpio() {
 int main()
 {
     stdio_init_all();
-    //init_gpio();
-
+    init_gpio();
     char last_key = 0; // Variável para armazenar a última tecla pressionada
-
 
     while (1) {
         char key = scan_keypad();
         switch (key) {
-                case 'A':
-                    gpio_put(LED3, 1); // Acende LED3
-                    break;
-                case 'B':
-                    gpio_put(LED2, 1); // Acende LED2
-                    break;
-                case 'C':
-                    gpio_put(LED1, 1); // Acende LED1
-                    break;
-                case 'D':
-                    // Acende todos os LEDs
-                    gpio_put(LED1, 1);
-                    gpio_put(LED2, 1);
-                    gpio_put(LED3, 1);
-                    break;
-                case '*':
-                    gpio_put(BUZZER_PIN, 1); // Liga buzzer
-                    break;
-                default:
-                    break;
-            }
+            case 'A':
+                gpio_put(LED3, 1); // Acende LED3
+                break;
+            case 'B':
+                gpio_put(LED2, 1); // Acende LED2
+                break;
+            case 'C':
+                gpio_put(LED1, 1); // Acende LED1
+                break;
+            case 'D':
+                // Acende todos os LEDs
+                gpio_put(LED1, 1);
+                gpio_put(LED2, 1);
+                gpio_put(LED3, 1);
+                break;
+            case '*':
+                gpio_put(BUZZER_PIN, 1); // Liga buzzer
+                break;
+            default:
+                break;
+        }
         last_key = key;
     }
 
