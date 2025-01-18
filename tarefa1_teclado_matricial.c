@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 #include <stdio.h>
 #include <pico/stdlib.h>
 #include <hardware/gpio.h>
@@ -48,13 +47,21 @@ void init_gpio() {
 
 
 
-=======
-        if (key && key != last_key) { // Apenas processa nova tecla
-            printf("Tecla pressionada: %c\n", key);
->>>>>>> origin/condicional1
 
             // Controla LEDs e buzzer com base na tecla pressionada
-            switch (key) {
+            
+
+int main()
+{
+    stdio_init_all();
+    //init_gpio();
+
+    char last_key = 0; // Variável para armazenar a última tecla pressionada
+
+
+    while (1) {
+        char key = scan_keypad();
+        switch (key) {
                 case 'A':
                     gpio_put(LED3, 1); // Acende LED3
                     break;
@@ -76,21 +83,7 @@ void init_gpio() {
                 default:
                     break;
             }
-
-<<<<<<< HEAD
-int main()
-{
-    stdio_init_all();
-    //init_gpio();
-
-    char last_key = 0; // Variável para armazenar a última tecla pressionada
-
-
-    while (1) {
-
+        last_key = key;
     }
+
 }
-=======
-            last_key = key; // Atualiza a última tecla pressionada
-        }
->>>>>>> origin/condicional1
