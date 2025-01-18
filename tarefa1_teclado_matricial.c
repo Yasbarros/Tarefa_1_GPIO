@@ -32,15 +32,14 @@ void init_gpio() {
         gpio_set_dir(row_pins[i], GPIO_OUT);
         gpio_put(row_pins[i], 1); // Inicializa em estado alto
     }
-}
 
-void init_gpio() {
     for (int i = 0; i < COLS; i++) {
         gpio_init(col_pins[i]);
         gpio_set_dir(col_pins[i], GPIO_IN);
         gpio_pull_up(col_pins[i]);
     }
 }
+
 
 int main()
 {
