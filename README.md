@@ -78,5 +78,5 @@ Este projeto implementa um sistema básico de leitura de um teclado matricial 4x
 - Certifique-se de usar resistores adequados para os LEDs.
 - Garanta que o buzzer esteja conectado corretamente para evitar danos.
 
-
+[Clique aqui ⬆️ e assista o vídeo](https://youtube.com/shorts/9hmxpylxr4s)
 
