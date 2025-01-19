@@ -16,16 +16,27 @@ Hardware Necessário
 4.	Buzzer
 5.	Cabos de conexão
 6.	Protoboard
+
 Conexões
+
 Teclado Matricial
+
 •	Linhas do teclado conectadas aos GPIOs: 2, 3, 4, 5
+
 •	Colunas do teclado conectadas aos GPIOs: 6, 7, 8, 9
+
 LEDs
 •	LED1: GPIO 11
+
 •	LED2: GPIO 12
+
+
 •	LED3: GPIO 13
+
 Buzzer
+
 •	Buzzer: GPIO 21
+
 Funcionamento do Sistema
 1.	Inicialização:
 •	As linhas do teclado são configuradas como saídas e iniciadas em estado alto.
