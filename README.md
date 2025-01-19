@@ -23,19 +23,19 @@ Buzzer
 •	Buzzer: GPIO 21
 Funcionamento do Sistema
 1.	Inicialização:
-•	As linhas do teclado são configuradas como saídas e iniciadas em estado alto.
-•	As colunas do teclado são configuradas como entradas com resistores de pull-up.
-•	LEDs e buzzer são configurados como saídas.
+o	As linhas do teclado são configuradas como saídas e iniciadas em estado alto.
+o	As colunas do teclado são configuradas como entradas com resistores de pull-up.
+o	LEDs e buzzer são configurados como saídas.
 2.	Varredura do Teclado:
-•	O sistema percorre as linhas do teclado e verifica quais colunas estão ativas, determinando a tecla pressionada.
+o	O sistema percorre as linhas do teclado e verifica quais colunas estão ativas, determinando a tecla pressionada.
 3.	Ações Baseadas na Entrada:
-•	Tecla A: Ativa o LED3. (VERMELHO)
-•	Tecla B: Ativa o LED2. (AZUL)
-•	Tecla C: Ativa o LED1. (VERDE)
-•	Tecla D: Ativa todos os LEDs.
-•	Tecla *: Ativa o buzzer.
+o	Tecla A: Ativa o LED3. (VERMELHO)
+o	Tecla B: Ativa o LED2. (AZUL)
+o	Tecla C: Ativa o LED1. (VERDE)
+o	Tecla D: Ativa todos os LEDs.
+o	Tecla *: Ativa o buzzer.
 4.	Liberação da Tecla:
-•	Quando nenhuma tecla está pressionada, todos os LEDs e o buzzer são desligados.
+o	Quando nenhuma tecla está pressionada, todos os LEDs e o buzzer são desligados.
 Compilação e Execução
 Requisitos
 •	SDK do Raspberry Pi Pico configurado.
@@ -46,8 +46,8 @@ Instruções
 3.	cd <PASTA_DO_PROJETO>
 4.	Compile o código:
 5.	Envie o binário para o Raspberry Pi Pico:
-•	Conecte o Pico ao computador em modo bootloader.
-•	Copie o arquivo .uf2 gerado para o dispositivo USB montado.
+o	Conecte o Pico ao computador em modo bootloader.
+o	Copie o arquivo .uf2 gerado para o dispositivo USB montado.
 Observações
 •	Certifique-se de usar resistores adequados para os LEDs.
 •	Garanta que o buzzer esteja conectado corretamente para evitar danos.
