@@ -1,4 +1,4 @@
-Projeto: Teclado Matricial com LEDs e Buzzer
+# Projeto: Teclado Matricial com LEDs e Buzzer
 
 Este projeto implementa um sistema básico de leitura de um teclado matricial 4x4 utilizando um Raspberry Pi Pico. O código configura e controla LEDs e um buzzer com base nas teclas pressionadas.
 
