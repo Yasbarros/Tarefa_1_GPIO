@@ -78,7 +78,5 @@ Este projeto implementa um sistema básico de leitura de um teclado matricial 4x
 - Certifique-se de usar resistores adequados para os LEDs.
 - Garanta que o buzzer esteja conectado corretamente para evitar danos.
 
-## Licença
 
-Este projeto está licenciado sob a [Licença MIT](LICENSE).
 
